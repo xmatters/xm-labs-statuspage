@@ -4,7 +4,13 @@ With this Outbound Integration, notification recipients can quickly create, upda
 
 This document details how to install and use this integration. 
 
-**NOTE**: As with all integrations in the xMatters Labs, this integration is stll in development, and as such we can provide only limited support. If you run into any problems, open an issue here on Github and we'll see what we can do.
+---------
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</kbd>
+
+---------
 
 # Pre-Requisites
 * [StatusPage.io](https://www.statuspage.io/) account
