@@ -23,7 +23,11 @@ if (callback.annotation == "null") {
 
 
 if( callback.response.toLowerCase() == 'create statuspage.io incident' ) {
-    var statusPageData = StatusPage.createStatusPageIncident( callback.eventProperties.number, "A new issue has been detected.");
+    // By defaut this script is configured to use the xMatters Event Identifier as the Status Page Name when creating the Status Page Incident.
+    // If you want to use the ServiceNow Incident ID then you can replace the active statusPageData entry with the one below.
+    // Note: you will also need to make the same change for the Update and Resolve entries within this script.
+//    var statusPageData = StatusPage.createStatusPageIncident( callback.eventProperties.number, "A new issue has been detected.");
+    var statusPageData = StatusPage.createStatusPageIncident( callback.eventIdentifier, "A new issue has been detected.");
 
     console.log( 'StatusPage data: ' + JSON.stringify( statusPageData ) );
     var msg = 'StatusPage.io Incident Created: [code]<a target="_blank" href="' + statusPageData.shortlink + '">' + statusPageData.name + '</a>[/code]';
@@ -39,11 +43,13 @@ else if( callback.response.toLowerCase() == 'update statuspage.io incident with 
         return;
     }
     
-    StatusPage.updateStatusPageIncident( callback.eventProperties.number, "update", callback.annotation );
+//    StatusPage.updateStatusPageIncident( callback.eventProperties.number, "update", callback.annotation );
+    StatusPage.updateStatusPageIncident( callback.eventIdentifier, "update", callback.annotation );
 
 }
 
 else if( callback.response.toLowerCase() == 'resolve statuspage.io incident' ) {
-    StatusPage.updateStatusPageIncident( callback.eventProperties.number, "resolve" );
+//    StatusPage.updateStatusPageIncident( callback.eventProperties.number, "resolve" );
+    StatusPage.updateStatusPageIncident( callback.eventIdentifier, "resolve" );
 
-}
+}  
