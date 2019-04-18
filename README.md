@@ -3,7 +3,7 @@ With this Outbound Integration, notification recipients can quickly create, upda
 
 This document details how to install and use this integration. 
 
-**Note**: You can get this same functionality using the awesome new Flow Designer without a line of code. Check it out [here](https://help.xmatters.com/ondemand/xmodwelcome/flowdesigner/statuspage-steps.htm)
+:heavy_exclamation_mark: **Note**: You can get this same functionality using the awesome new Flow Designer without a line of code. Check it out [here](https://help.xmatters.com/ondemand/xmodwelcome/flowdesigner/statuspage-steps.htm)
 
 ---------
 
