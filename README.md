@@ -1,8 +1,9 @@
 # StatusPage Outbound (from xMatters) Integration
-This is part of the xMatters Labs awesome listing. For others, see [here](https://github.com/xmatters/xMatters-Labs)
 With this Outbound Integration, notification recipients can quickly create, update, and resolve StatusPage incidents, right from the xMatters notification! 
 
 This document details how to install and use this integration. 
+
+**Note**: You can get this same functionality using the awesome new Flow Designer without a line of code. Check it out [here](https://help.xmatters.com/ondemand/xmodwelcome/flowdesigner/statuspage-steps.htm)
 
 ---------
 
